@@ -7,7 +7,6 @@ import ChallengeBox from '@/components/challengeBox'
 import { CountDownProvider } from '../contexts/countDownContext'
 import { UserDatasContext } from '../contexts/userDatasContext'
 
-import { useRouter } from 'next/router';
 import Head from 'next/head'
 
 import {useContext} from 'react'
@@ -17,7 +16,6 @@ import Login from './login'
 
 export default function Home() {
   const {realName} = useContext(UserDatasContext)
-  const router = useRouter();
 
   return (
     realName?(
