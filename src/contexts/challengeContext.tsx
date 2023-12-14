@@ -52,7 +52,7 @@ export function ChallengesProvider({ children }: ChallengesProviderProps){
 
   function startNewChallenges(){
     const randomChallangeIndex = Math.floor(Math.random() * challenges.length)    
-    const challenge : Challenge = challenges[randomChallangeIndex];
+    const challenge: any = challenges[randomChallangeIndex];
 
     setActiveChallenge(challenge);
 

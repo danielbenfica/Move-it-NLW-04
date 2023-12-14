@@ -39,7 +39,7 @@ export function CountDownProvider({ children } : CountDownProviderProps){
   function resetCountDown(){
     clearTimeout(countDownTimeout)
     setIsActive(false)
-    setTime(0.05 * 60)
+    setTime(25 * 60)
     setHasFinished(false)
   }
 
